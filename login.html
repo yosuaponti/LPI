@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<title>Login LPI</title>
+SELECT * FROM public."lpiMember"
+ORDER BY akun ASC
+<style>
+  body {background-color: lightskyblue;}
+  h1 {
+    color: black;
+    font-family: verdana;
+    font-size: 200%;
+  }
+  p {
+    color: red;
+    font-family: arial;
+    font-size: 160%;
+    border: 0px solid powderblue;
+    padding: 30px;
+    margin: 50px;
+  }
+  input[type=text] {
+    width: 150px;
+    display: block;
+    margin-bottom: 10px;
+    background-color: yellow;
+  }
+  input[type=button] {
+    width: 150px;
+    display: block;
+  }
+    </style>
+
+<body>
+
+<h1 style="background-color:powderblue;text-align:center;">
+    Silakan masukan AKUN dan PIN Anda</h1>
+<hr>
+
+<div style="flex: 1; display:flex; align-items: center; justify-content: center; flex-direction: column;">
+  <form name="input" action="" method="get">
+    AKUN:<input type="text" name="Name" value="id" size="20">
+    PIN:<input type="text" name="Name" value="password" size="20">
+    <input type="button" value="login" style="margin-top: 10px;">
+  </form>
+</div>
+
+</body>
+</html>
